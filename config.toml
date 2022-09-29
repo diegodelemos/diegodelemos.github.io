@@ -67,30 +67,13 @@ languageName = "English"
     # whether to show copyright info
     copyright = true
     # whether to show the author
-    author = true
+    author = false
     # site creation time
     since = 2022
 
   [params.app]
     # optional site title override for the app when added to an iOS home screen or Android launcher
     title = "diegodelemos"
-
-  [params.search]
-    enable = true
-    # type of search engine ["lunr", "algolia"]
-    type = "lunr"
-    # max index length of the chunked content
-    contentLength = 4000
-    # placeholder of the search bar
-    placeholder = "Search"
-    # max number of results length
-    maxResultLength = 10
-    # snippet length of the result
-    snippetLength = 30
-    # HTML tag name of the highlight part in results
-    highlightTag = "em"
-    # whether to use the absolute URL based on the baseURL in search index
-    absoluteURL = false
 
   [params.home]
     # amount of RSS pages
@@ -100,17 +83,26 @@ languageName = "English"
       enable = true
       gravatarEmail = "diegorgzrgz@gmail.com"
       avatarURL = ""
-      subtitle = "Software Engineer"
+      title = "Diego Rodríguez Rodríguez"
+      subtitle = "Software Engineer. Find more about <a href='/about'>me</a>."
       typeit = false
       # whether to show social links
       # 是否显示社交账号
       social = true
-      disclaimer = "Tortilla architect."
+      disclaimer = "tortilla architect."
     [params.home.posts]
-      enable = false
+      enable = true
   [params.social]
     GitHub = "diegodelemos"
     Linkedin = "diegodelemos/"
     Twitter = "diego_delemos"
     Gitlab = "diegodelemos"
     Keybase = "diegodelemos"
+  [params.page]
+    hiddenFromHomePage = true
+    [params.page.toc]
+      enable = false
+    [params.page.share]
+      enable = false
+    [params.page.comment]
+      enable = false
