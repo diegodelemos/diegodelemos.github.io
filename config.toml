@@ -109,8 +109,8 @@ languageName = "English"
     [params.home.posts]
       enable = false
   [params.social]
-    GitHub = "https://github.com/diegodelemos"
-    Linkedin = "https://www.linkedin.com/in/diegodelemos/"
-    Twitter = "https://twitter.com/diego_delemos"
-    Gitlab = "https://gitlab.com/diegodelemos"
-    Keybase = "https://keybase.io/diegodelemos"      
+    GitHub = "diegodelemos"
+    Linkedin = "diegodelemos/"
+    Twitter = "diego_delemos"
+    Gitlab = "diegodelemos"
+    Keybase = "diegodelemos"
