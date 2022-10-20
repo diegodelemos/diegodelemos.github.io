@@ -1,8 +1,0 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Tags - Tag - Diego Rodríguez Rodríguez</title>
-        <link>https://diegodelemos.me/tags/</link>
-        <description>Tags - Tag - Diego Rodríguez Rodríguez</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>diegodelemos@pm.me (Diego Rodríguez Rodríguez)</managingEditor>
-            <webMaster>diegodelemos@pm.me (Diego Rodríguez Rodríguez)</webMaster><atom:link href="https://diegodelemos.me/tags/" rel="self" type="application/rss+xml" /></channel>
-</rss>
