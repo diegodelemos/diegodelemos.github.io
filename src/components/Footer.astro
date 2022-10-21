@@ -16,39 +16,101 @@ import { AUTHOR_FULL_NAME } from "../config";
 </style>
 
 <script>
-	// Get the theme toggle input
+	// // Get the theme toggle input
+	// const themeToggle = document.querySelector(
+	// 	'.theme-switch input[type="checkbox"]'
+	// );
+	// // const prefersDarkScheme = window.matchMedia(
+	// // 	"(prefers-color-scheme: dark)"
+	// // );
+
+	// // Get the current theme from local storage
+	// const currentTheme = localStorage.getItem("theme");
+
+	// // If the current local storage item can be found
+	// if (currentTheme) {
+	// 	// Set the body data-theme attribute to match the local storage item
+	// 	document.body.setAttribute("data-theme", currentTheme);
+
+	// 	// If the current theme is dark, check the theme toggle
+	// 	if (currentTheme === "dark") {
+	// 		themeToggle.checked = true;
+	// 	}
+	// }
+
+	// // Function that will switch the theme based on the if the theme toggle is checked or not
+	// function switchTheme(e) {
+	// 	if (e.target.checked) {
+	// 		document.body.setAttribute("data-theme", "dark");
+	// 		localStorage.setItem("theme", "dark");
+	// 	} else {
+	// 		document.body.setAttribute("data-theme", "light");
+	// 		localStorage.setItem("theme", "light");
+	// 	}
+	// }
+
+	// // Add an event listener to the theme toggle, which will switch the theme
+	// themeToggle.addEventListener("change", switchTheme, false);
+	// On page load or when changing themes, best to add inline in `head` to avoid FOUC
+	// // Get the theme toggle input
 	const themeToggle = document.querySelector(
 		'.theme-switch input[type="checkbox"]'
 	);
-	// const prefersDarkScheme = window.matchMedia(
-	// 	"(prefers-color-scheme: dark)"
-	// );
 
-	// Get the current theme from local storage
-	const currentTheme = localStorage.getItem("theme");
-
-	// If the current local storage item can be found
-	if (currentTheme) {
-		// Set the body data-theme attribute to match the local storage item
-		document.body.setAttribute("data-theme", currentTheme);
-
-		// If the current theme is dark, check the theme toggle
-		if (currentTheme === "dark") {
-			themeToggle.checked = true;
-		}
+	if (
+		localStorage.theme === "dark" ||
+		(!("theme" in localStorage) &&
+			window.matchMedia("(prefers-color-scheme: dark)").matches)
+	) {
+		document.documentElement.classList.add("dark");
+	} else {
+		document.documentElement.classList.remove("dark");
 	}
 
-	// Function that will switch the theme based on the if the theme toggle is checked or not
-	function switchTheme(e) {
-		if (e.target.checked) {
-			document.body.setAttribute("data-theme", "dark");
-			localStorage.setItem("theme", "dark");
+	// Whenever the user explicitly chooses light mode
+	localStorage.theme = "light";
+
+	// Whenever the user explicitly chooses dark mode
+	localStorage.theme = "dark";
+
+	// Whenever the user explicitly chooses to respect the OS preference
+	localStorage.removeItem("theme");
+
+	// function switchTheme(e) {
+	// 	if (e.target.checked) {
+	// 		document.documentElement.classList.add("dark");
+	// 		localStorage.setItem("theme", "dark");
+	// 	} else {
+	// 		document.documentElement.classList.remove("dark");
+	// 		localStorage.setItem("theme", "light");
+	// 	}
+	// }
+
+	// // Add an event listener to the theme toggle, which will switch the theme
+	// themeToggle.addEventListener("change", switchTheme, false);
+
+	var darkModeToggle = document.getElementById("dark-mode-toggle");
+
+	darkModeToggle.addEventListener("click", function () {
+		// if set via local storage previously
+		if (localStorage.getItem("color-theme")) {
+			if (localStorage.getItem("color-theme") === "light") {
+				document.documentElement.classList.add("dark");
+				localStorage.setItem("color-theme", "dark");
+			} else {
+				document.documentElement.classList.remove("dark");
+				localStorage.setItem("color-theme", "light");
+			}
+
+			// if NOT set via local storage previously
 		} else {
-			document.body.setAttribute("data-theme", "light");
-			localStorage.setItem("theme", "light");
+			if (document.documentElement.classList.contains("dark")) {
+				document.documentElement.classList.remove("dark");
+				localStorage.setItem("color-theme", "light");
+			} else {
+				document.documentElement.classList.add("dark");
+				localStorage.setItem("color-theme", "dark");
+			}
 		}
-	}
-
-	// Add an event listener to the theme toggle, which will switch the theme
-	themeToggle.addEventListener("change", switchTheme, false);
+	});
 </script>
