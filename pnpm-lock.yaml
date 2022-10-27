@@ -28,10 +28,11 @@ specifiers:
   prettier-plugin-astro: 0.5.4
   prettier-plugin-tailwindcss: ^0.1.13
   rollup: ^3.2.3
+  sharp: '>=0.31.0'
   stylelint: ^14.11.0
   stylelint-config-prettier: ^9.0.3
   stylelint-config-standard: ^28.0.0
-  tailwindcss: ^3.1.8
+  tailwindcss: ^3.0.24
   typescript: ^4.8.2
 
 dependencies:
@@ -64,6 +65,7 @@ devDependencies:
   prettier: 2.7.1
   prettier-plugin-astro: 0.5.4
   prettier-plugin-tailwindcss: 0.1.13_prettier@2.7.1
+  sharp: 0.31.1
   stylelint: 14.11.0
   stylelint-config-prettier: 9.0.3_stylelint@14.11.0
   stylelint-config-standard: 28.0.0_stylelint@14.11.0
@@ -2635,7 +2637,7 @@ packages:
     dev: true
 
   /github-from-package/0.0.0:
-    resolution: {integrity: sha1-l/tdlr/eiXMxPyDoKI75oWf6ZM4=}
+    resolution: {integrity: sha512-SyHy3T1v2NUXn29OsWdxmK6RwHD+vkj3v8en8AOBZ1wBQ/hCAQ5bAQTD02kW4W9tUp/3Qh6J8r9EvntiyCmOOw==}
     dev: true
 
   /github-slugger/1.4.0:
@@ -5003,6 +5005,21 @@ packages:
   /sharp/0.30.7:
     resolution: {integrity: sha512-G+MY2YW33jgflKPTXXptVO28HvNOo9G3j0MybYAHeEmby+QuD2U98dT6ueht9cv/XDqZspSpIhoSW+BAKJ7Hig==}
     engines: {node: '>=12.13.0'}
+    requiresBuild: true
+    dependencies:
+      color: 4.2.3
+      detect-libc: 2.0.1
+      node-addon-api: 5.0.0
+      prebuild-install: 7.1.1
+      semver: 7.3.7
+      simple-get: 4.0.1
+      tar-fs: 2.1.1
+      tunnel-agent: 0.6.0
+    dev: true
+
+  /sharp/0.31.1:
+    resolution: {integrity: sha512-GR8M1wBwOiFKLkm9JPun27OQnNRZdHfSf9VwcdZX6UrRmM1/XnOrLFTF0GAil+y/YK4E6qcM/ugxs80QirsHxg==}
+    engines: {node: '>=14.15.0'}
     requiresBuild: true
     dependencies:
       color: 4.2.3
