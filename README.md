@@ -1,33 +1,4 @@
-<p align="center">
-  <img alt="Astro Theme Cactus logo" src="./public/images/astro-theme-cactus.png" width="70" />
-</p>
-<h1 align="center">
-  Astro Theme Cactus 🚀🌵
-</h1>
-
-> Astro Theme Cactus is a simple opinionated starter built with the Astro framework. Use it to create an easy-to-use blog or website.
-
-### 💻 [Live Demo](https://astro-theme-cactus.netlify.app/) hosted on Netlify
-
-## Features
-
-Made with Astro, Typescript, and TailwindCSS
-
-- Astro Fast 🚀
-- Accessible, semantic HTML markup
-- Responsive & SEO-friendly
-- [Astro Image Integration](https://docs.astro.build/en/guides/integrations-guide/image/) for optimised images
-- MDX posts
-- Pagination
-- Theming colour modes with Tailwind and CSS variables
-- Shiki code syntax styling
-- Auto-generated sitemap
-
-## Quick start
-
-[Create a new repo](https://github.com/chrismwilliams/astro-theme-cactus/generate) from this template.
-
-[![Deploy with Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/chrismwilliams/astro-theme-cactus) [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fchrismwilliams%2Fastro-theme-cactus&project-name=astro-theme-cactus)
+# Personal blog site
 
 ## Commands
 
@@ -76,7 +47,7 @@ By default the site will be built (see Commands section above) to a `/dist` dire
 
 ## Acknowledgment
 
-This theme is inspired by [Hexo Theme Cactus](https://github.com/probberechts/hexo-theme-cactus)
+This theme is based in the [Astro Theme Cactus](https://github.com/chrismwilliams/astro-theme-cactus)
 
 ## License
 

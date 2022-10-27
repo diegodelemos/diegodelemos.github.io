@@ -1,5 +1,6 @@
 ---
 import PageLayout from "@/layouts/Base";
+import SocialList from "@/components/SocialList";
 
 const meta = {
 	title: "About",
@@ -10,30 +11,22 @@ const meta = {
 <PageLayout meta={meta}>
 	<div class="space-y-6">
 		<h1 class="title">About</h1>
-		<p>
-			Hi, I’m a starter Astro. I’m particularly great for getting you
-			started with your own blogging website.
+		<p class="text-justify">
+			My name is Diego Rodríguez Rodríguez and I am a software engineer
+			specialized in Python and its ecosystem. I am fond of the DevOps
+			culture and I enjoy infrastructure discussions, design and
+			implementations.
 		</p>
-		<p>Here are my some of my awesome built in features:</p>
+		<p>Here are some of the technologies I am familiar with:</p>
 		<ul class="list-disc list-inside">
-			<li>I'm ultra fast as I'm a static site</li>
-			<li>I'm fully responsive</li>
-			<li>I come with a light and dark mode</li>
-			<li>I'm easy to customise and add additional content</li>
-			<li>I have Tailwind CSS styling</li>
-			<li>Shiki code syntax highlighting</li>
+			<li>Flask</li>
+			<li>SQlAlchemy</li>
+			<li>...</li>
 		</ul>
 		<p>
-			Clone or fork my
-			<a
-				class="inline-block cactus-link"
-				href="https://github.com/chrismwilliams/astro-cactus"
-				target="_blank"
-				rel="noopener noreferrer"
-				aria-label="github repository"
-			>
-				repo
-			</a> if you like me!
+			Does it sound cool? Do you want to colaborate? Building a trust
+			relationship is my cup of tea, if so it is yours reach me out
 		</p>
+		<SocialList />
 	</div>
 </PageLayout>

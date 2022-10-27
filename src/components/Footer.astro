@@ -2,17 +2,13 @@
 const year = new Date().getFullYear();
 ---
 
-<footer>
-	<div>
-		Copyright &copy; {year}
-		<span aria-label="rocket emoji">🚀</span>
-		Astro Cactus
+<footer class="flex-col">
+	<div class="text-center">
+		&copy; {year} Diego Rodríguez Rodríguez. All rights reserved
 	</div>
-	<nav aria-label="More on this site">
-		<a href="/">Home</a>
-		<a href="/about">About</a>
-		<a href="/posts">Blog</a>
-	</nav>
+	<div class="text-center">
+		Built with <span aria-label="rocket heart">❤️</span> and Astro Cactus.
+	</div>
 </footer>
 
 <style>

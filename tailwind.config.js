@@ -98,6 +98,9 @@ module.exports = {
 				".title": {
 					"@apply text-2xl font-semibold text-accent-2": {},
 				},
+				".subtitle": {
+					"@apply text-xl font-semibold text-accent-2": {},
+				},
 			});
 		}),
 	],
